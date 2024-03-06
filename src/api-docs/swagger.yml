@@ -24,13 +24,13 @@ paths:
                   type: string
                 result:
                   type: string
-                winner_image_url:
+                winnerImageUrl:
                   type: string
               required:
                 - title
                 - content
                 - result
-                - winnerImageUrl
+                - winner_image_url
       responses:
         '201':
           description: Post creado correctamente
@@ -167,7 +167,7 @@ paths:
           description: ID del post
           schema:
             type: string
-      requestQuery:
+      requestBody:
         required: true
         content:
           application/json:
@@ -180,13 +180,13 @@ paths:
                   type: string
                 result:
                   type: string
-                winner_image_url:
+                winnerImageUrl:
                   type: string
               required:
                 - title
                 - content
                 - result
-                - winnerImageUrl
+                - winner_image_url
       responses:
         '200':
           description: Post actualizado correctamente

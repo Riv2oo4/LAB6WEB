@@ -58,7 +58,7 @@ app.get('/posts/:postId', async (req, res) => {
 
 
 app.put('/posts/:postId', async (req, res) => {
-  const postId = req.params.id;
+  const postId = req.params.postId;
   const {
     title, content, result, winnerImageUrl} = req.body;
   try {
